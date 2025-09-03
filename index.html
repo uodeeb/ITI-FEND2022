@@ -29,11 +29,11 @@ about hte document type
 -->
         <!--CSS selectors Types-->
     <style>
-        /*____________1. Univeral Selector _________________*/
+        /*____________1. Universal Selector _________________*/
         * {
             background: violet;
             padding: 0px;
-            margin: 0px auto;
+            margin: 0px;
             font-size: 30px;
         }
         /*____________2. Type Selector _________________*/
@@ -74,12 +74,12 @@ about hte document type
         }
 
         div + p {
-            /*__________ p  after div____________*/
+            /*__________ p  after div direct sibling____________*/
             color: yellow;
         }
 
         br ~ p {
-            /*__________ p  after div____________*/
+            /*__________ p  after div in the same container____________*/
             color: white;
         }
         .para span {
@@ -92,7 +92,7 @@ about hte document type
             font-size: 50px;
             color: blue;
         }
-        /*____________7. Pseudo elements _________________*/
+        /*____________8. Pseudo elements _________________*/
         #pseudo::after {
             content: "this line is not written in HTML";
             padding: 5px;
@@ -135,6 +135,6 @@ about hte document type
 <!--____________7. Pseudo classes _________________-->
 <a class="anchor" href="#">Click the link!</a>
 <!--____________8. Pseudo elements _________________-->
-<h3 id="pseudo" >you can add a conten to this element using the pseudo element</h3>
+<h3 id="pseudo" >you can add content to this element using the pseudo element</h3>
 </body>
 </html>
